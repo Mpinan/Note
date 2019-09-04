@@ -7,7 +7,7 @@
     return this.noteArray
   }
 
-  NoteList.prototype.addNoteToList = function(note){
+  NoteList.prototype.addNoteToList = function(note = new Note){
     return this.noteArray.push(note)
   }
   NoteList.prototype.printNoteList = function(){
