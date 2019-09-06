@@ -6,7 +6,6 @@
     var html = document.createElement('div');
     console.log(html)
     console.log("Hello")
-
     var note = note.text
     html.innerText = note
     tag1 = document.createElement("li")
