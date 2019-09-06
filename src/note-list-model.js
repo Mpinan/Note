@@ -10,11 +10,5 @@
   NoteList.prototype.addNoteToList = function(note = new Note){
     return this.noteArray.push(note)
   }
-  NoteList.prototype.printNoteList = function(){
-
-    this.noteArray.forEach(function (note) {
-    console.log(note.text);
-    });
-  }
   exports.NoteList = NoteList
 })(this)

@@ -1,17 +1,19 @@
 <html>
 
 <head>
-  <script src="src/note-model.js"></script>
+  <h1>To Do List</h1>
   <script src="src/note-list-model.js"></script>
-  <script src="spec/noteSpec.js"></script>
   <script src="src/note-list-view.js"></script>
 </head>
 
-<body>
-
-    <textarea name="note_input" id="note_input" cols="30" rows="10"></textarea>
+<body onload="//window.alert('Welcome to my To do List!');">
+  <textarea name="note_input" id="note_input" cols="30" rows="10"></textarea>
     <button id = "create_button">SAVE</button>
-
+    <p id="here"></p>
+    <script src="src/note-model.js"></script>
+    <script src="src/note-list-model.js"></script>
+    <script src="src/note-list-view.js"></script>
+    <script src="src/note-controller.js"></script>
 </body>
 
 </html>
