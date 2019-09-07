@@ -1,22 +1,20 @@
 (function(exports){
-  function NoteView(noteList = new NoteList){
+  function NoteView(noteList){
     this.noteList = noteList
   }
   NoteView.prototype.convert = function(){
-    var html = document.createElement('div');
-    console.log(html)
-    console.log("Hello")
-    var note = note.text
-    html.innerText = note
-    tag1 = document.createElement("li")
-    tag1.appendChild(html)
 
-    this.noteList.view().map(function(note){
-      html += note.text;
-      html += '</div></li><li><div>';
+    var tagJoin = this.noteList.noteArray.map(function(note){
+      var html = '<div><li>';
+      html += note.text
+      html += '</div></li>';
+      return html
     });
-    hmtl += '</div></li></ul>';
-    return html
+    var ul = '<ul>'
+    tagJoin = tagJoin.join('');
+    ul += tagJoin
+    ul += '</ul>';
+    return ul
   }
 
   exports.NoteView = NoteView

@@ -3,8 +3,8 @@
     this.text = text
   };
 
-  Note.prototype.noteText = function(string){
-    return this.text = string.substring(0, 20);
+  Note.prototype.noteText = function(){
+    return this.text.substring(0, 20);
   }
 
   exports.Note = Note
