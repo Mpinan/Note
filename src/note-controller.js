@@ -8,6 +8,8 @@
     this.htmlString = noteView.convert()
   };
   
+  //gets the string createad in the noteList View and transform it in real html
+  //A div with ID app is selected and we pass the string created.
   NoteController.prototype.passingHtml = function(htmlString) {
     htmlString = this.htmlString
     document.getElementById("app").innerHTML = htmlString

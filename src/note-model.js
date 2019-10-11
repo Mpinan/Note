@@ -8,7 +8,7 @@
   }
 
   exports.Note = Note
-
+  //a new tag is created and the ID is call app
   Note.prototype.htmlToDisplay = function(){
     const div = document.createElement('div');
     let abbreviatedText = this._shorten(this.text)
